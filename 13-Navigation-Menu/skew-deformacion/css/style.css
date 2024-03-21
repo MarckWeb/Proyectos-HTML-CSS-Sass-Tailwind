@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+iframe {
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#menu{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+#menu li{
+    transform: skewX(30deg);
+    background-color: rgb(175, 170, 170);
+}
+
+#menu a{
+   text-decoration: none;
+   color: inherit; 
+   padding: 10px;
+   display: block;
+   transform: skewX(-30deg);
+}
+
+#menu li:hover{
+    background-color: orange;
+ }
+
+ #menu li:hover a{
+    color: white;
+ }
