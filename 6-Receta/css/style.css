@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    border: 0;
+}
+
+body{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+    background-color: rgba(216, 214, 214, 0.884);
+    margin-left: 30px;
+}
+
+#principal{
+    border: 1px solid darkgray;
+    background-color: white;
+    width: 600px;
+    margin: 10px auto 20px;
+    border-radius: 10px;
+    
+}
+
+h1,h2{
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+h1{
+    color: cornflowerblue;
+    text-align: center;
+    margin: 20px;
+}
+#chef{
+    display: block;
+    margin: 0px auto 20px;
+    border-radius: 150px;
+}
+
+h2{
+    background-color: rgba(173, 171, 171, 0.897);
+    color: white;
+    padding-left: 10px;
+}
+
+#ingredientes{
+    margin: 0px 0px 20px 60px;
+    list-style-image: url(../img/check.png);
+}
+
+#ingredientes li{
+    margin-bottom: 5px;
+}
+
+.parrafos{
+    margin: 25px;
+    text-align: justify;
+}
+
+
+
+.letras{
+    font-weight: bold;
+}
+
+.red{
+    color: red;
+}
+
+.verde{
+    color: darkgreen;
+}
+
+.blue{
+    color:cornflowerblue;
+}
+
+#pie{
+    border-top: 1px solid darkgray;
+    font-style: italic;
+    text-align: right;
+    padding:10px 10px;
+    margin: 10px 10px;
+
+}
+
+

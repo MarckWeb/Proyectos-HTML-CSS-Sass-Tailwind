@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+iframe {
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+#site-header{
+    background-image: url(../img/bg-desk.jpg);
+    background-position: center;
+    /* scrroll sube la imagen y el texto  */
+    /* fixed sube solo el texto y la imagen de fondo se queda estatico */
+    background-attachment: scroll;  
+    min-height: 100vh;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 80px;
+}
+
+/* el codigo de abajo es para asignar a los item de h1,p,a un ancho minimo. o de otr aforma seri acolocar un div para colocarle un tamano y centrar */
+
+#site-header > *{
+    max-width: 550px;
+}
+
+#site-header h1{
+    font-size: 60px;
+    font-weight: normal;
+    
+}
+
+#site-header p{
+    margin: 20px 0;
+    
+}
+
+#site-header a{
+    border: 1px solid white;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+
+#test{
+    background-color: blue;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+#site-main{
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#site-main h2,h3,p{
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+    
+
+

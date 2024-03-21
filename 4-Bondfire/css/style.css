@@ -1,0 +1,236 @@
+@font-face{
+    src: url(../fonts/optima.woff);
+    font-family: 'Optima';
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+iframe {
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    font-family: 'Optima';
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
+
+#site-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-nav{
+    width: 50%;
+    background-color: white;
+}
+
+#menu{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#menu li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+
+#menu a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    border-bottom: 1px solid black; 
+}
+
+#bondfire h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Optima';
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+#bondfire h1:hover{
+    color: black;
+}
+
+#studio{
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#studio h2{
+    font-size: 60px;
+    font-family: 'Optima';
+    font-weight: 400;
+    font-style: normal;
+}
+
+#studio span{
+    font-family: 'Roboto Mono', monospace;
+}
+   
+#site-footer{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#redes-sociales{
+    display: flex;
+}
+
+#redes-sociales li{
+    list-style: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+#redes-sociales a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* sector studio */
+
+#bondfire-2 h1{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Optima';
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+#bondfire-2 h1:hover{
+    color: black;
+}
+
+#section{
+    width: 400px;
+    
+
+}
+
+#section h2{
+    margin-bottom: 2em;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+#section p{
+    margin-bottom: 1.5em;
+    font-size: 15px;
+    line-height: 1.5em;
+    word-spacing: 0.2em;
+}
+
+main{
+    padding: 100px 0;
+}
+
+#contactos{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+   
+}
+
+.direct h3{
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.direct li{
+    list-style: none;
+    margin: 1.5em 0;
+}
+
+.direct a{
+    color: inherit;
+}
+
+@media(min-width: 1200px){
+
+    #site-nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    #bondfire{
+        background-image: url(../img/bg-index.jpg);
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    #site-container{
+        width: 50%;
+        margin-left: auto;
+    }
+
+    #bondfire-2{
+        background-image: url(../img/bg-studio.jpg);
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+
+}
+
+
+
+
+
+
+    
+
+
+
+
