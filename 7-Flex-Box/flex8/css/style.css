@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    border: 0;
+}
+
+#container{
+    width: 800px;
+    height: 500px; 
+    background-color: rgb(200, 232, 245);
+    border: 1px solid blue;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    
+    justify-content: flex-end;
+}
+.item{
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    background-color:brown;
+    color: aliceblue;
+    padding: 10px;
+    margin: 5px;
+}
+
+ #caja-b{
+    margin-right: auto;
+}
+
+#caja-d{
+    margin-right: auto;
+} 
