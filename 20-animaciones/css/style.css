@@ -1,0 +1,47 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: lightskyblue;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+
+    /* es clave colocar animacion y darle un nombre para despues con keyframe darle lo que hara en cada tramo 2 o infinite las veces de repet y alternate la vuelta de la acción */
+    animation: traslation 10s forwards infinite alternate;
+}
+
+
+ .container:hover .item{
+    animation-play-state: paused;
+    /* es para parar la accion por defecto lleva "runing"  raning*/
+}
+
+@keyframes traslation {
+    0%{
+        background-color: red;
+        transform: translatex(0%) rotate(50deg);
+    }
+
+     25%{
+        background-color: white;
+        transform: translate(100%, 350%) rotate(100deg);
+    } 
+
+    50%{
+        background-color: blue;
+        transform: translate(200%, 0%) rotate(180deg);
+    }
+
+    75%{
+        background-color: black;
+        transform: translate(300%, 350%) rotate(250deg);
+    }
+    100%{
+        background-color: orange;
+        transform: translate(400%, 0%) rotate(360deg);
+    }
+}

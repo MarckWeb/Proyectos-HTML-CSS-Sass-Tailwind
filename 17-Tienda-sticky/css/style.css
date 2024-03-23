@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+iframe {
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: rgb(233, 227, 227);
+    color: black;
+
+}
+
+#image{
+    background-image: url(../img/deco.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+
+#site-header{
+    text-align: center;
+    background-color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+
+
+#site-nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+    
+}  
+
+#site-nav li{
+    list-style: none;
+    margin-right: 20px;
+
+}
+
+#site-nav li:last-child{
+    margin-right: 0;
+} 
+
+
+#site-nav a{
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}  
+
+#site-main {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#home{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ margin: 10px 0;
+}
+
+#home h2{
+    font-size: 50px;
+    font-weight: normal;
+
+   }
+
+
+#clear{
+    width: 50px;
+    clear: both;
+    border: 2px solid black;
+    margin: 10px 0;
+}
+
+#site-main p{
+    margin-bottom: 10px;
+}
+
+@media(min-width: 800px){
+    #site-header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #site-main{
+        width: 80%;
+        max-width: 1000px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #home{
+        width: 20%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #text{
+        width: 70%; 
+    }
+
+ }   

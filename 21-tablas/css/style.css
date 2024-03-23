@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe {
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    border: 0;
+    background-color: 0;
+    cursor: pointer;
+}
+
+body {
+    --color-fondo-contenido: white;
+    --tamaño-letras: 16px;
+    --tipofrafia-contenido: 'Roboto Slab', serif;
+    --color-letras: black;
+    --color-span: rgb(166, 162, 162);
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: var(--tamaño-letras);
+    background-color: var(--color-fondo-contenido);
+    color: var(--color-letras);
+}
+
+/* todas las propiedades de collaps- spacing- empty-cell se lo dan a la caja por que toma el control de las celdas  */
+
+
+
+table {
+    width: 80%;
+    background-color: yellow;
+    margin: auto;
+    padding: 10px;
+    border-spacing: 5px 5px;
+    /* */
+    empty-cells: hide;
+
+    /* border-collapse: collapse; */
+    /* junta las celdas borde collapse */
+
+}
+
+/* son los envabezados de la tabla  */
+
+#tab th {
+    border: 1px solid blue;
+    padding: 5px;
+    /* para colocar al costado un texto que esta centrado */
+    text-align: left;
+
+
+}
+
+/* la tr son filas
+en background-color las celdas estan por delante y lo tapara */
+
+#tab tr {
+    background-color: orange;
+}
+
+/* son las celdas por debajo de las th. */
+#tab td {
+    border: 1px solid red;
+}

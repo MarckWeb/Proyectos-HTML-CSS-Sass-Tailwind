@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+
+iframe {
+    border: 0;
+}
+
+img {
+    width: 100%;
+}
+
+button{
+    border: 0;
+    background-color: none;
+    cursor: pointer;
+}
+
+html{
+    --color-fondo-pagina: white;
+    --tamano-letras: 16px;
+    --color-texto: black;
+    --color-fondo-contenedor: black;
+    --tipografia-principal: "Lucida Sans Unicode", sans-serif;
+}
+
+body {
+    font-family: var(--tipografia-principal);
+    font-size: var(--tamano-letras);
+    color: var(--color-texto);
+    background-color: var(--color-fondo-pagina);
+}
+
+/* todo */
+
+#menu li{
+    list-style: none;
+}
+
+#menu a{
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    text-align: center;
+}
+
+
+/* primer tramo */
+
+#site-nav>ul{
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
+
+#site-nav>ul>li{
+    width: 25%;
+    border-right: 2px solid white;
+    position: relative;
+}
+
+#site-nav>ul>li:last-child{
+    border-right: 0;
+} 
+
+#site-nav>ul>li>a{
+    background-color: rgb(33, 167, 250);
+    display: block;
+    color: white;
+}
+
+#site-nav>ul>li>a:hover {
+    background-color: rgb(105, 190, 240);
+}
+
+/* segundo tramo */
+
+ #site-nav .submenu{
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0.7);
+}
+
+#site-nav li:hover>.submenu{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+#site-nav .submenu a{
+    color: black;
+}
+
+#site-nav .submenu a:hover{
+    background-color: rgb(138, 184, 245);
+}
+
+/* main */
+
+main{
+    padding: 50px;
+}
+
+main h1{
+    color: blue;
+    margin-bottom: 50px;
+    text-align: center;
+}
