@@ -1,0 +1,40 @@
+@use "variables";
+@use "mixins";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body{
+    font-family: variables.$font-family-primary;
+    font-size: variables.$font-size-paragrahp;
+    font-style: normal;
+    font-weight: normal;
+    background: variables.$background-and-text;
+    color: variables.$color-title;
+}
+
+.container{
+    width: 100%;
+    padding: 10px;
+
+    @include mixins.tall {
+        padding: 50px;
+        max-width: 1380px;
+        margin: auto;
+    }
+
+
+}

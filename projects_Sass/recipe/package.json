@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "recipe-page-master",
+  "version": "1.0.0",
+  "description": "<!-- Please update value in the {}  -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --watch  --config",
+    "sass": "sass --watch --style=compressed sass/index.scss public/bundle.css"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^3.27.2"
+  }
+}

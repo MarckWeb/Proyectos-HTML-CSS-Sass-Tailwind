@@ -1,0 +1,65 @@
+@import '../../sass/mixins';
+@import '../../sass/variables';
+
+.blog {
+	margin-top: 24px;
+
+	&__title {
+		@include box-projects;
+		font-size: 18px;
+	}
+
+	&__item {
+		margin-top: 24px;
+		@include box-projects;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		padding-bottom: 5px;
+
+		@include desktop {
+			flex-direction: row;
+			align-items: center;
+			height: 400px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+		&-subtitle {
+			color: #e0e0e0;
+		}
+
+		&-tema {
+			width: 178px;
+			font-size: 24px;
+			font-weight: 500;
+		}
+
+		&-text {
+			color: $color-font-second;
+		}
+
+		& span {
+			color: #2f80ed;
+		}
+	}
+
+	&__figure {
+		width: 100%;
+		max-width: 467px;
+
+		&-img {
+			border-radius: $border-radius;
+		}
+
+		@include desktop {
+			&-img {
+				width: 450px;
+			}
+		}
+	}
+}

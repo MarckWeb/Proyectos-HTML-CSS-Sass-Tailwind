@@ -1,0 +1,10 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.experiences {
+	@include sections;
+	margin-top: 44px;
+	&__title {
+		@include subtitles;
+	}
+}

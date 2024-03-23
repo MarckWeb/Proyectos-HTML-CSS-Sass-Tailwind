@@ -1,0 +1,12 @@
+@import './sass/mixins';
+
+.container {
+	width: 90%;
+	max-width: 1300px;
+	margin: auto;
+
+	@include table {
+		display: flex;
+		gap: 25px;
+	}
+}

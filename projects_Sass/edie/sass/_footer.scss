@@ -1,0 +1,69 @@
+@use "variables";
+@use "mixins";
+
+.footer{
+    background-color: variables.$background-footer;
+    color: variables.$background-and-text;
+    padding: 24px 41px;
+
+    &__items{
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        & ul{
+            list-style: none;
+        }
+
+        &-redes-items{
+            display: flex;
+            gap: 11px;
+        }
+    }
+
+    &__email{
+        margin-left: 0;
+    }
+
+    &__user{
+        text-align: center;
+        margin-top: 154px;
+        font-size: 14px;
+        
+
+        & a {
+            color: inherit;
+            font-weight: 700;
+        }
+    }
+
+    @include mixins.tall {
+        padding-top: 46px;
+        &__items{
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: start;
+    
+            & ul{
+        
+                line-height: 36px;
+            }
+
+            & h2{
+                font-size: 36px;
+            }
+    
+            &-redes-items{
+                display: flex;
+                gap: 11px;
+            }
+        }
+    
+    }
+
+    &__user{
+        margin-top: 100px;
+    }
+
+  
+}

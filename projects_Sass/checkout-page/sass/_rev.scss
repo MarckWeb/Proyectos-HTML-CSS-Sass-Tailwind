@@ -1,0 +1,133 @@
+@use "variables";
+@use "mixins";
+
+.products {
+  width: 100%;
+  max-width: 383px;
+  height: 500px;
+  border-radius: 12px;
+  padding: 30px 25px;
+  background: variables.$background-products;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  &:last-child {
+    gap: 0;
+  }
+
+  &__box {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    &-figure {
+      width: 100%;
+      max-width: 120px;
+    }
+
+    &-image {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-content {
+      &-title {
+        color: #4e5150;
+      }
+
+      &-price {
+        color: #f2994a;
+        margin: 20px 0;
+
+        & span {
+          display: inline-block;
+          margin-left: 10px;
+          color: #4e5150;
+          font-size: 10px;
+          position: relative;
+
+          &::before {
+            display: block;
+            content: "";
+            width: 80%;
+            height: 1px;
+            background: variables.$font-color;
+            position: absolute;
+            top: 5px;
+            left: 0;
+          }
+        }
+      }
+
+      &-count {
+        border: 1px solid variables.$borde-input;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+        height: 50px;
+        padding: 15px 10px;
+        border-radius: 10px;
+      }
+
+      &-btn {
+        background: #e0e0e0;
+        border-radius: 5px;
+        width: 25px;
+        height: 25px;
+        border: none;
+      }
+
+      &-input {
+        width: 20px;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__totals {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 70px;
+
+    &-text {
+      border-top: 1px solid variables.$borde-input;
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & span {
+        display: block;
+      }
+    }
+  }
+
+  @include mixins.small {
+    &__box-content {
+      font-size: 16px;
+
+      &-price {
+        & span {
+          font-size: 12px;
+          &::before {
+            top: 7px;
+          }
+        }
+      }
+    }
+
+    &__totals {
+      &-text {
+        font-size: 18px;
+      }
+    }
+  }
+}

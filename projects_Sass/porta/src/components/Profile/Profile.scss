@@ -1,0 +1,46 @@
+@import '../../sass/mixins';
+@import '../../sass/variables';
+
+.profile {
+	@include sections;
+
+	&__figure {
+		width: 100%;
+		max-width: 367px;
+		height: 358px;
+		&-img {
+			@include img-size;
+			border-radius: $border-radius;
+		}
+	}
+
+	&__name {
+		font-size: 24px;
+		margin-top: 24px;
+	}
+
+	&__profession {
+		color: $color-font-second;
+		font-size: 18px;
+		margin-bottom: 28px;
+		line-height: 30px;
+	}
+
+	&__email,
+	&__phone {
+		display: flex;
+		align-items: center;
+		line-height: 30px;
+		&-icon {
+			margin-right: 10px;
+			font-size: 25px;
+		}
+	}
+
+	&__bio {
+		color: $color-font-second;
+		margin-top: 28px;
+		width: 332px;
+		font-size: 18px;
+	}
+}

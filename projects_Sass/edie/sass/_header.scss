@@ -1,0 +1,53 @@
+@use"variables";
+@use "mixins";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &-icon{
+        display: block;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+    }
+
+    @include mixins.tall {
+
+        &__logo{
+            font-size: 36px;
+        }
+
+        & span{
+            display: none;
+        }
+
+        &__nav {
+            display: block;
+        }
+
+        &__menu{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            font-size: 24px;
+
+           & li{
+                &:hover a{
+                    color: variables.$color-buttons;
+                }
+               
+            }
+        }
+    }
+}
+

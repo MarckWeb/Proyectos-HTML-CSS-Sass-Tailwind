@@ -1,0 +1,27 @@
+@use "./variables";
+@use "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: variables.$background;
+  color: variables.$font-color;
+  font-size: 12px;
+  font-family: variables.$font-primary;
+}
+
+.container {
+  padding: 32px 12px 25px;
+
+  @include mixins.small {
+    margin: 52px 250px;
+  }
+}

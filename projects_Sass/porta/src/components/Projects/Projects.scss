@@ -1,0 +1,14 @@
+@import '../../sass/mixins';
+
+.projects {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+
+	&__title {
+		@include box-projects;
+		font-size: 18px;
+		font-weight: 500;
+	}
+}

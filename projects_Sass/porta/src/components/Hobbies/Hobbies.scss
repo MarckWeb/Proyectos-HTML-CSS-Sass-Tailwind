@@ -1,0 +1,10 @@
+@import '../../sass/mixins';
+
+.hobbies {
+	@include sections;
+	height: 836px;
+	margin-top: 25px;
+	&__title {
+		@include subtitles;
+	}
+}

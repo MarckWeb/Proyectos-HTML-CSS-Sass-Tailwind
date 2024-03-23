@@ -1,0 +1,91 @@
+@use "variables";
+@use "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: variables.$background;
+  font-family: variables.$font-family-primary;
+  color: variables.$font-color;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+
+  @include mixins.small {
+    font-size: 14px;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  //   padding: 30px 22px;
+  &__title {
+    color: #4e5150;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+  }
+
+  @include mixins.small {
+    &__title {
+      font-size: 36px;
+      margin-left: 20px;
+    }
+
+    &__content {
+      flex-direction: row-reverse;
+      align-items: normal;
+      gap: 100px;
+    }
+  }
+}
+
+// .container {
+//   width: 90%;
+//   max-width: 900px;
+//   margin: auto;
+//   //   padding: 30px 22px;
+//   &__title {
+//     color: #4e5150;
+//     font-size: 24px;
+//     font-weight: 600;
+//   }
+
+//   &__content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 50px;
+//     margin-top: 20px;
+//   }
+
+//   @include mixins.small {
+//     &__title {
+//       font-size: 36px;
+//       margin-left: 20px;
+//     }
+
+//     &__content {
+//       flex-direction: row-reverse;
+//       align-items: normal;
+//       gap: 100px;
+//     }
+//   }
+// }

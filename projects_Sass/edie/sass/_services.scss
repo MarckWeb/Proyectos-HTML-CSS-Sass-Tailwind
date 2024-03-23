@@ -1,0 +1,92 @@
+@use "variables";
+@use "mixins";
+
+.services{
+  
+
+    &__items{
+        
+
+        &-box{
+            width: 341px;
+            height: 422px;
+            margin: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 46px 34px;
+            cursor: pointer;
+
+            &:hover{
+                border-radius: 24px;
+                box-shadow: 0px 10px 30px 0px rgba(51, 51, 51, 0.10);
+            }
+
+            &:hover &-button{
+                background-color: variables.$color-buttons;
+                color: #E0E0E0;
+            }
+
+            &-icon, &-icon2, &-icon3{
+                
+                width: 67px;
+                height: 67px;
+                border-radius: 16px;
+                display: grid;
+                place-content: center;
+                
+               & span{
+                font-size: 36px;
+                color: white;
+                font-weight: 500;
+               }
+            }
+
+            &-icon{
+                background-color: variables.$color-buttons;
+            }
+
+            &-icon2{
+                background-color: variables.$background-front
+            }
+
+            &-icon3{
+                background-color: variables.$background-back
+            }
+
+            &-title{
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            &-text{
+                font-size: 16px;
+                color: variables.$color-paragrahp;
+            }
+
+            &-button{
+                width: 116px;
+                height: 42px;
+                border: 12px;
+                color: variables.$color-figcaption;
+                background: #E0E0E0;
+                border-radius: 12px;
+                font-size: 16px;
+
+            }
+        }
+    }
+
+    @include mixins.tall{
+        &__items{
+            display: flex;
+        }
+
+        &__title{
+            width: 346px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+}

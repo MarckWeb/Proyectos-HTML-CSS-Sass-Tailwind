@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/devchallenges.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="public/bundle.css">
+  <script defer src="public/bundle.js"></script>
+  <title>Devchallenges</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="container__title">Checkout</h1>
+    <article class="container__content">
+      <article class="products">
+        <section class="products__box">
+          <figure class="products__box-figure">
+            <img class="products__box-image" src="assets/photo1.png" alt="imagen Vintage Backbag ">
+          </figure>
+          <div class="products__box-content">
+            <p class="products__box-content-title">Vintage Backbag</p>
+            <p class="products__box-content-price">$54.99 <span>$94.99</span></p>
+            <div class="products__box-content-count" id="product1">
+              <button class="products__box-content-btn" data-subtract="subtract">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                </svg>
+              </button>
+              <input class="products__box-content-input" id="vintage-amount" type="text" value="1" />
+              <button class="products__box-content-btn" data-add="add">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="products__box">
+          <figure class="products__box-figure">
+            <img class="products__box-image" src="assets/photo2.png" alt="imagen Vintage Backbag ">
+          </figure>
+          <div class="products__box-content">
+            <p class="products__box-content-title">Levi Shoes</p>
+            <p class="products__box-content-price">$74.99 <span>$124.99</span></p>
+            <div class="products__box-content-count" id="product2">
+              <button class="products__box-content-btn" data-subtract="subtract">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                </svg>
+              </button>
+              <input class="products__box-content-input" id="levi-amount" type="text" value="1" />
+              <button class="products__box-content-btn" data-add="add">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="products__totals">
+          <p class="products__totals-text"> <span>Shipping</span><span class="products__totals-amount">$19</span></p>
+          <p class="products__totals-text"><span>Total</span> <span class="products__totals-amount">$148.98</span></p>
+        </section>
+      </article>
+
+
+      <section class="form">
+        <form id="form__box" class="form__box" action="">
+          <span class="form__box-subtitle">Contact infomation</span>
+          <div class="input__box">
+            <span class="material-symbols-sharp input__box-icon">
+              mail
+            </span>
+            <input class="input__box-input" type="text" name="email" id="email" placeholder="Enter your email...">
+            <label class="input__box-label" for="email">E-mail</label>
+          </div>
+
+          <div class="input__box">
+            <span class="material-symbols-sharp input__box-icon">
+              call
+            </span>
+            <input class="input__box-input" type="text" name="phone" id="phone" placeholder="Enter your phone...">
+            <label class="input__box-label" for="phone">Phone</label>
+          </div>
+
+          <span class="form__box-subtitle">Shipping address</span>
+          <div class="input__box">
+            <span class="material-symbols-sharp input__box-icon">
+              account_circle
+            </span>
+            <input class="input__box-input" type="text" name="user" id="user" placeholder="Rodney Cotton">
+            <label class="input__box-label" for="user">Full name</label>
+          </div>
+          <div class="input__box">
+            <span class="material-symbols-sharp input__box-icon">
+              home
+            </span>
+            <input class="input__box-input" type="text" name="address" id="address" placeholder="Your address...">
+            <label class="input__box-label" for="address">Address</label>
+          </div>
+          <div class="input__box">
+            <span class="material-symbols-sharp input__box-icon">
+              location_city
+            </span>
+            <input class="input__box-input" type="text" name="city" id="city" placeholder="Your city...">
+            <label class="input__box-label" for="city">City</label>
+          </div>
+          <div class="form__box-inputs">
+            <div class="input__box">
+              <span class="material-symbols-sharp input__box-icon">
+                public
+              </span>
+              <select class="input__box-input input__box-input-arrow" name="country" id="country">
+                <option value="">Your country</option>
+                <option value="">Spain</option>
+                <option value="">United States</option>
+                <option value="">Kindong United</option>
+              </select>
+              <div class="input__box-input-arrow-overlay"></div>
+              <label class="input__box-label" for="country">Country</label>
+            </div>
+            <div class="input__box">
+              <span class="material-symbols-sharp input__box-icon">
+                markunread_mailbox
+              </span>
+              <input class="input__box-input" type="text" name="postal-code" id="postal-code"
+                placeholder="Your postal-code...">
+              <label class="input__box-label" for="postal-code">Postal code</label>
+            </div>
+          </div>
+
+          <div class="form__checkbox">
+            <input id="form__checkbox-box" class="form__checkbox-box" type="checkbox" name="checkbox" id="checkbox">
+            <label class="form__checkbox-text" for="checkbox">Save this information for next time</label>
+          </div>
+
+          <input class="form__submit" type="submit" value="Continue">
+
+        </form>
+      </section>
+    </article>
+    <p class="footer">created by <span class="footer__username">David-MarckWeb</span> - devChallenges.io</p>
+  </div>
+</body>
+
+</html>

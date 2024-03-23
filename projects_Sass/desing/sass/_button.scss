@@ -1,0 +1,51 @@
+@use "./mixins";
+
+.button {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 2;
+
+  &-item {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: transform 0.4s, top 0.4s 0.5s;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 50%;
+    }
+
+    &:nth-child(3) {
+      top: 100%;
+    }
+  }
+
+  &--active .button-item:nth-child(2) {
+    opacity: 0;
+  }
+
+  &--active .button-item:nth-child(1),
+  &--active .button-item:nth-child(3) {
+    top: 50%;
+    transition: top 0.4s, transform 0.3s 0.5s;
+  }
+  &--active .button-item:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  &--active .button-item:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  @include mixins.small {
+    display: none;
+  }
+}

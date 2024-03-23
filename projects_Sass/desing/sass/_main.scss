@@ -1,0 +1,149 @@
+@use "./variables";
+@use "./mixins";
+
+.content {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 50px 0;
+
+    &-title {
+      font-size: 36px;
+      font-family: variables.$font-secundary;
+      font-weight: 500;
+    }
+
+    &-paragraph {
+      width: 250px;
+      font-weight: 400;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 700;
+    }
+  }
+
+  &__picture {
+    position: relative;
+
+    &-image {
+      width: 100%;
+      height: 280px;
+    }
+
+    &-box {
+      width: 280px;
+      position: absolute;
+      right: 20px;
+      bottom: -75px;
+      background: variables.$background;
+      border-bottom: 2px solid black;
+      padding-top: 10px;
+      padding-bottom: 20px;
+
+      &-div {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+      }
+
+      &-figure {
+        width: 60px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+      }
+
+      &-image {
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+      }
+
+      &-name {
+        font-size: 12px;
+        font-weight: 500;
+
+        &-span {
+          color: #828282;
+          font-size: 10px;
+        }
+      }
+
+      &-detail {
+        width: 210px;
+        font-size: 18px;
+        font-family: variables.$font-secundary;
+        font-weight: 700;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  @include mixins.small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+
+    &__info {
+      &-title {
+        font-size: 48px;
+        line-height: 60px;
+      }
+
+      &-paragraph {
+        width: 410px;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      &-link {
+        font-size: 18px;
+      }
+    }
+    &__picture {
+      &-image {
+        width: 100%;
+        height: 550px;
+      }
+
+      &-box {
+        width: 410px;
+
+        &-div {
+          margin-left: 20px;
+        }
+
+        &-figure {
+          margin-right: 20px;
+        }
+
+        &-image {
+          width: 100%;
+          height: 100%;
+        }
+
+        &-name {
+          font-size: 14px;
+          line-height: 12px;
+
+          &-span {
+            font-size: 12px;
+          }
+        }
+
+        &-detail {
+          margin-left: 30px;
+          margin-top: 20px;
+          width: 290px;
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.footer {
+  color: #a9a9a9;
+  font-weight: 500;
+  margin-top: 150px;
+  text-align: center;
+  &__username {
+    font-weight: 700;
+    border-bottom: 1px solid #a9a9a9;
+  }
+}

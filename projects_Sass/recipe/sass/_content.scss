@@ -1,0 +1,91 @@
+@use "./variables";
+@use "./mixins";
+
+.content {
+  margin: 20px 0;
+
+  &__box {
+    display: flex;
+    gap: 10px;
+
+    &-image {
+      width: 20px;
+      height: 18px;
+      margin-top: 2px;
+      margin-left: 5px;
+    }
+
+    &-text {
+      font-size: 10px;
+    }
+
+    &-span {
+      font-weight: 500;
+      color: #f2994a;
+    }
+  }
+
+  &__times {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    &-item {
+      color: variables.$font-color-secundary;
+      font-size: 8px;
+      display: flex;
+    }
+
+    &-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    &-span {
+      color: variables.$font-color-adition;
+    }
+  }
+
+  @include mixins.small {
+    width: 216px;
+    height: 367px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 57px 51px 49px 43px;
+    &__box {
+      &-image {
+        width: 34px;
+        height: 34px;
+      }
+
+      &-text {
+        margin-top: 5px;
+      }
+
+      &-span {
+        font-size: 14px;
+      }
+    }
+
+    &__times {
+      margin-top: 50px;
+      flex-direction: column;
+      gap: 42px;
+
+      &-item {
+        font-size: 10px;
+      }
+
+      &-icon {
+        width: 28px;
+        height: 26px;
+      }
+
+      &-span {
+        font-size: 14px;
+      }
+    }
+  }
+}

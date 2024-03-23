@@ -1,0 +1,59 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+
+.project {
+	@include box-projects;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+
+	&__figure {
+		width: 100%;
+		max-width: 321px;
+
+		& img {
+			border-radius: $border-radius;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 465px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+
+		&-title {
+			font-size: 24px;
+			font-weight: 500;
+		}
+
+		&-text {
+			color: $color-font-second;
+		}
+
+		&-buttons {
+			& button {
+				cursor: pointer;
+				border: 1px solid #2f80ed;
+				width: 136px;
+				height: 46px;
+				border-radius: $border-radius;
+				color: #2f80ed;
+				font-size: 18px;
+				background-color: inherit;
+
+				&:nth-child(1) {
+					background-color: #2f80ed;
+					color: $background;
+					margin-right: 11px;
+				}
+			}
+		}
+	}
+
+	@include desktop {
+		flex-direction: row;
+	}
+}

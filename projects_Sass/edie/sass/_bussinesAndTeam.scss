@@ -1,0 +1,203 @@
+@use "variables";
+@use "mixins";
+
+.bussines{
+    & a{
+        color: variables.$color-buttons;
+        text-decoration: none;
+    }
+    &__pictures{
+        margin-top: 50px;
+        &-figure{
+            width: 100%;
+            max-width: 424px;
+            height: 405px;
+            margin-bottom: 100px;
+
+            & img{
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+            }
+
+            & figcaption{
+                color: variables.$color-figcaption;
+                font-size: 12px;
+            }
+
+            & span {
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+
+   @include mixins.tall{
+    position: relative;
+        & a{
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+            font-size: 24px;
+        }
+        &__title{
+            font-size: 36px;
+            margin: 50px;
+        }
+
+        &__pictures{
+            width: 100%;
+            max-width: 1100px;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            &-figure{
+                max-width: 543px;
+                height: 544px;
+                
+                &:nth-child(odd){
+                    margin-top: 176px;
+                }
+
+                & figcaption{
+                    font-size: 14px;
+                }
+
+                & span {
+                    font-size: 24px;
+                }
+            }
+        } 
+    }
+
+}
+
+.team{
+    margin: 100px 0;
+
+    &__subtitle{
+        color: variables.$background-back;
+    }
+
+    &__title{
+        width: 280px;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    &__gallery{
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        align-items: center;
+        margin-top: 36px;
+        margin-bottom: 100px;
+       
+
+        & img {
+            border-radius: 24px;
+            &:nth-child(1){
+                width: 178px;
+                height: 178px;
+                grid-column: 1/2;
+                grid-row: 1/3;
+                
+            }
+
+            &:nth-child(2){
+                width: 144px;
+                height: 144px;
+                
+            }
+
+            &:nth-child(3){
+                width: 162px;
+                height: 167px;
+                
+            }
+        }
+    }
+
+    &__quote{
+        font-size: 24px;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    &__decorated{
+        margin-top: 27px;
+        display: flex;
+
+        & img{
+            display: block;
+            width: 82px;
+            margin-right: 30px;
+            border-radius: 12px;
+        }
+
+        & p{
+            font-size: 24px;
+            & span {
+                font-size: 18px;
+                color: #828282;
+            }
+        }
+    }
+
+    @include mixins.tall{
+        margin-left: 50px;
+
+         &__subtitle{
+        font-size: 18px;
+        }
+
+        &__text{
+            width: 273px;
+        }
+
+        &__box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__gallery{
+            max-width: 620px;
+            height: 550px;
+            gap: 25px;
+            align-items: center;
+            margin-top: 36px;
+            margin-bottom: 100px;
+           
+    
+            & img {
+                &:nth-child(1){
+                    width: 320px;
+                    height: 320px; 
+                }
+    
+                &:nth-child(2){
+                    width: 260px;
+                    height: 260px;
+                    
+                }
+    
+                &:nth-child(3){
+                    width: 291px;
+                    height: 300px;
+                    
+                }
+            }
+        }
+
+        &__quote{
+            font-size: 36px;
+            max-width: 937px;
+        }    
+    } 
+}

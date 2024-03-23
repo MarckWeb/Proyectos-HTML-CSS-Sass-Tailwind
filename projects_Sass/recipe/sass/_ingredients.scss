@@ -1,0 +1,109 @@
+@use "./variables";
+@use "./mixins";
+
+.ingredients {
+  &__title {
+    font-family: variables.$font-secundary;
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    font-family: variables.$font-secundary;
+    font-size: 16px;
+    font-style: italic;
+    margin: 20px 0;
+  }
+
+  //   &__items {
+  //     border: 2px solid blue;
+  //   }
+
+  &__item {
+    font-size: 14px;
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+
+    &-text {
+      margin-top: 5px;
+      color: variables.$font-color-adition;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  &__points {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #828282;
+    border-radius: 4px;
+  }
+
+  &__instruction {
+    &-title {
+      font-size: 24px;
+      font-family: variables.$font-secundary;
+      margin: 30px 0;
+    }
+
+    &-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 12px;
+
+      & p {
+        width: 100%;
+        max-width: 500px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+      }
+    }
+
+    &-span {
+      display: block;
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background-color: variables.$background-icons;
+      font-family: variables.$font-secundary;
+      display: grid;
+      place-content: center;
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    font-style: italic;
+    color: variables.$font-color-secundary;
+    margin-top: 26px;
+  }
+
+  @include mixins.small {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+
+    &__item {
+      &-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        max-width: 554px;
+        margin-top: auto;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+  }
+}
